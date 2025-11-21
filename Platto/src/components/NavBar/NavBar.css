@@ -1,5 +1,5 @@
-.navbar {
-  padding: 20px 0;             /* top/bottom 20px, left/right 0 */
+.navbar{
+  padding: 20px 0px;             /* top/bottom 20px, left/right 0 */
   display: flex;               /* horizontal flex layout */
   justify-content: space-between; /* space between left and right items */
   align-items: center;         /* vertically center items */
@@ -9,7 +9,7 @@
   width: 150px;                /* logo width */
 }
 
-.navbar-menu {
+.navbar-menu{
   display: flex;               /* horizontal list */
   list-style: none;            /* remove bullets */
   gap: 20px;                   /* space between menu items */
