@@ -1,0 +1,74 @@
+.navbar {
+  padding: 20px 0;             /* top/bottom 20px, left/right 0 */
+  display: flex;               /* horizontal flex layout */
+  justify-content: space-between; /* space between left and right items */
+  align-items: center;         /* vertically center items */
+}
+
+.navbar .logo {
+  width: 150px;                /* logo width */
+}
+
+.navbar-menu {
+  display: flex;               /* horizontal list */
+  list-style: none;            /* remove bullets */
+  gap: 20px;                   /* space between menu items */
+  color: #49557e;              /* text color */
+  font-size: 18px;             /* font size */
+}
+
+.navbar-menu li {
+  cursor: pointer;             /* pointer on hover */
+}
+
+.navbar-right {
+  display: flex;               /* horizontal layout */
+  gap: 15px;                   /* space between right items */
+}
+.navbar-right {
+  display: flex;           /* arrange items horizontally */
+  align-items: center;     /* vertical alignment */
+  gap: 40px;               /* space between items */
+}
+
+.navbar button {
+  background: transparent;       /* transparent background */
+  font-size: 16px;
+  color: #49557e;                /* fixed color typo */
+  border: 1px solid tomato;      /* fixed border */
+  padding: 10px 30px;            /* padding inside button */
+  border-radius: 50px;           /* rounded button */
+  cursor: pointer;               /* mouse becomes hand on hover */
+
+  /* smooth transition for hover effects */
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar button:hover {
+  background-color: rgb(255, 206, 197);      /* background changes on hover */
+       /* slightly grow button */
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  min-width: 10px;
+  min-height: 10px;
+  background-color: tomato;
+  border-radius: 50%;
+  top: -8px;
+  right: -8px;
+}
