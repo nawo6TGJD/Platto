@@ -21,10 +21,78 @@
   padding: 25px 30px;
   border-radius: 8px;
   font-size: 14px;
-  animation: fadeIn 0.5s ease;
+  animation: fadeIn 0.5s ;
 }
 
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+/* Popup Title */
+.login-popup-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000; /* black text */
+}
+
+.login-popup-title img {
+  width: 16px; 
+  cursor: pointer;
+}
+
+/* Inputs Container */
+.login-popup-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Fields */
+.login-popup-inputs input {
+  outline: none;
+  border: 1px solid #c9c9c9;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.login-popup-inputs input:focus {
+  border-color: tomato;
+}
+
+
+/* Button inside popup */
+.login-popup-container button {
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  color: white;
+  background-color: tomato; /* set your desired button color */
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Checkbox + condition container */
+.login-popup-condition {
+  display: flex;
+  align-items: start; /* use center instead of start for better alignment */
+  gap: 8px;
+  margin-top: -15px; /* adjust spacing */
+}
+
+/* Checkbox input inside condition */
+.login-popup-condition input {
+  margin-top: 5px; /* align properly with text */
+}
+
+/* Clickable spans inside popup paragraphs */
+.login-popup p span {
+  color: tomato; /* highlight color */
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login-popup p span:hover {
+  text-decoration: underline; /* optional hover effect */
 }
