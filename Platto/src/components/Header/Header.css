@@ -1,41 +1,62 @@
 .header {
-    height: 34vw;
-    margin: 30px auto;
-    background: url('/header_img.png') no-repeat;
-    background-size: contain;
-    position: relative;
+  height: 34vw;
+  margin: 30px auto;
+  background: url("/header_img.png") no-repeat;
+  background-size: contain;
+  position: relative;
 }
 
 .header-contents {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5vw;
-    max-width: 50%;
-    bottom: 10%;
-    left: 6vw;
-    animation: fadeIn 4s ;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5vw;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fadeIn 4s;
 }
 
-.header-contents h2{
-    font-weight: 500;
-    color: white; /* fixed syntax */
-    font-size: max(4.5vw, 22px); /* responsive font size */
+.header-contents h2 {
+  font-weight: 500;
+  color: white; /* fixed syntax */
+  font-size: max(4.5vw, 22px); /* responsive font size */
 }
 
 .header-contents p {
-    color: white;
-    font-size: 1.5vw; /* "lvw" was invalid, replaced with a reasonable vw unit */
+  color: white;
+  font-size: 1.5vw; /* "lvw" was invalid, replaced with a reasonable vw unit */
 }
 
 .header-contents button {
-    border: none; /* fixed typo "nonw" */
-    color: #747474; /* fixed invalid "0#747474" */
-    font-weight: 500;
-    padding: 1vw 2.3vw; /* replaced "lvw" with valid vw */
-    background-color: rgb(255, 255, 255); /* fixed invalid value */
-    cursor: pointer; /* optional for button interactivity */
-    border-radius:50px; /* optional rounded corners */
-    font-size: max(1vw,13px); 
+  border: none; /* fixed typo "nonw" */
+  color: #747474; /* fixed invalid "0#747474" */
+  font-weight: 500;
+  padding: 1vw 2.3vw; /* replaced "lvw" with valid vw */
+  background-color: rgb(255, 255, 255); /* fixed invalid value */
+  cursor: pointer; /* optional for button interactivity */
+  border-radius: 50px; /* optional rounded corners */
+  font-size: max(1vw, 13px);
+}
+/* First breakpoint */
+@media (max-width: 1050px) {
+  .header-contents {
+    max-width: 45%;
+  }
+}
+
+/* Second breakpoint */
+@media (max-width: 750px) {
+  .header-contents {
+    max-width: 60%;
+  }
+
+  .header-contents p {
+    display: none;
+  }
+
+  .header-contents button {
+    padding: 2vw 4vw;
+  }
 }
