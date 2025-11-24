@@ -1,8 +1,11 @@
 .header {
+  width: 99.9%;              /* make it wider horizontally */
+  max-width: none;         /* remove max-width restriction */
   height: 34vw;
-  margin: 30px auto;
+  margin: 30px auto;       /* keeps it horizontally centered */
   background: url("/header_img.png") no-repeat;
-  background-size: contain;
+  background-size: cover;  /* fills the div horizontally */
+  background-position: center;
   position: relative;
 }
 
@@ -16,6 +19,7 @@
   bottom: 10%;
   left: 6vw;
   animation: fadeIn 4s;
+   text-shadow: 0 0 10px rgb(19, 17, 17), 0 0 20px rgb(26, 11, 11), 0 0 30px rgb(94, 75, 75);
 }
 
 .header-contents h2 {
@@ -27,6 +31,7 @@
 .header-contents p {
   color: white;
   font-size: 1.5vw; /* "lvw" was invalid, replaced with a reasonable vw unit */
+  text-shadow: 0 0 10px rgb(19, 17, 17), 0 0 20px rgb(26, 11, 11), 0 0 30px rgb(32, 28, 28);
 }
 
 .header-contents button {
@@ -36,8 +41,8 @@
   padding: 1vw 2.3vw; /* replaced "lvw" with valid vw */
   background-color: rgb(255, 255, 255); /* fixed invalid value */
   cursor: pointer; /* optional for button interactivity */
-  border-radius: 50px; /* optional rounded corners */
-  font-size: max(1vw, 13px);
+  border-radius: 57px; /* optional rounded corners */
+  font-size: max(1vw, 14px);
 }
 /* First breakpoint */
 @media (max-width: 1050px) {
