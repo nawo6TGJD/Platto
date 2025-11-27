@@ -13,6 +13,9 @@
 .login-popup-container {
   width: 330px;
   max-width: 23vw;
+   width: 90%;          /* 90% of viewport width on small screens */
+  max-width: 400px;    /* max width for desktops */
+  min-width: 300px; 
   background-color: white;
   color: #808080;
   display: flex;

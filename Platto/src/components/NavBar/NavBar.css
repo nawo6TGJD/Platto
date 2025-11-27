@@ -73,6 +73,49 @@
   right: -8px;
 }
 
+/* Default button style */
+.navbar-right button {
+  background: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid rgb(179, 39, 14);
+  padding: 10px 25px;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-right button:hover {
+  background-color: rgb(255, 206, 197);
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1050px) {
+  .navbar-right button {
+    padding: 8px 20px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-right button {
+    padding: 6px 15px;   /* smaller padding on mobile */
+    font-size: 14px;     /* smaller text */
+    border-radius: 50px; /* keep rounded */
+    min-width: 80px;     /* ensures clickable area */
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-right button {
+    padding: 5px 12px;
+    font-size: 13px;
+    min-width: 70px;
+  }
+}
+
 
 @media (max-width: 750px) {
 
