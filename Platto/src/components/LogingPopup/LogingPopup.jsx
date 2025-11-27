@@ -35,7 +35,7 @@ const LogingPopup = ({ setShowLogin }) => {
 
         <div className="login-popup-condition">
           <input type="checkbox" required />
-          <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+          <p>Remember me</p>
         </div>
         {currState === "Loging" ? (
           <p>

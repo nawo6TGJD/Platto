@@ -6,9 +6,9 @@ import { menu_list} from '../../assets/assets'
 const ExploreMenu = ({category,setCategory}) => {
   return (
     <div className="explore-menu" id="explore-menu">
-      <h1>Explore Our Menu</h1>
+      <h1>Find Your Favorite</h1>
       <p className="explore-menu-text">
-        Choose from a diverse menu featuring a delectable selection
+      Explore a menu full of flavors from around the world, carefully crafted to satisfy every craving. Combining traditional favorites with innovative creations, each visit is a delightful journey of taste.
       </p>
 
       <div className="explore-menu-list">

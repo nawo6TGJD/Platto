@@ -6,7 +6,7 @@ const AppDownload = () => {
   return (
    <div className="app-download" id='app-download'>
       <p>
-        For a better experience download <br /> the Tomato App
+        Enjoy a better food experience<br /> Get Platto Now
       </p>
 
       <div className="app-download-platforms">

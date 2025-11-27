@@ -35,9 +35,9 @@
   background: transparent;       /* transparent background */
   font-size: 16px;
   color: #49557e;                /* fixed color typo */
-  border: 1px solid tomato;      /* fixed border */
+  border: 1px solid rgb(179, 39, 14);      /* fixed border */
   padding: 10px 30px;            /* padding inside button */
-  border-radius: 50px;           /* rounded button */
+  border-radius: 60px;           /* rounded button */
   cursor: pointer;               /* mouse becomes hand on hover */
 
   /* smooth transition for hover effects */

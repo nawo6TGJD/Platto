@@ -58,7 +58,7 @@
   font-size: 14px;
 }
 .login-popup-inputs input:focus {
-  border-color: tomato;
+  border-color:rgb(177, 30, 4);
 }
 
 
@@ -68,7 +68,7 @@
   padding: 10px;
   border-radius: 4px;
   color: white;
-  background-color: tomato; /* set your desired button color */
+  background-color: rgb(177, 30, 4); /* set your desired button color */
   font-size: 15px;
   cursor: pointer;
 }
@@ -88,7 +88,7 @@
 
 /* Clickable spans inside popup paragraphs */
 .login-popup p span {
-  color: tomato; /* highlight color */
+  color: rgb(146, 26, 5); /* highlight color */
   font-weight: 500;
   cursor: pointer;
 }

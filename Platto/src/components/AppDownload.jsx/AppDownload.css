@@ -4,6 +4,8 @@
   font-size: max(3vw, 20px);
   text-align: center;
   font-weight: 500;
+  color: #645858;
+  cursor: pointer;
 }
 
 .app-download-platforms {
@@ -22,4 +24,25 @@
 
 .app-download-platforms img:hover {
   transform: scale(1.05);
+}
+.app-download p {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typeIn 7s steps(40) forwards;
+}
+
+@keyframes typeIn {
+  from { width: 0; }
+  to { width: 100%; }
+}
+/* Desktop hover */
+.app-download-platforms img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 6px #6b6b67);
+}
+
+/* Mobile tap */
+.app-download-platforms img:active {
+  transform: scale(0.92);
 }

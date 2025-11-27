@@ -4,9 +4,10 @@
 }
 
 .explore-menu-text {
-  max-width: 60%;
+  max-width: 70%;
   color: #808080;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.7rem;
+  margin-top: 5px;
 }
 
 .explore-menu-list {
@@ -52,6 +53,27 @@
   height: 2px;
   background-color: #e0e0e0;
   margin: 10px 0;
+}
+
+.explore-menu h1,
+.explore-menu-text {
+  opacity: 0;
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.explore-menu-text {
+  animation-delay: 1s; /* paragraph starts after h1 */
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .explore-menu-list-item .active {
